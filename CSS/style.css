@@ -1,0 +1,105 @@
+
+/*❀⋆.ೃ࿔*:･°❀⋆.ೃ࿔*:･°❀⋆.ೃ࿔*:･°❀⋆.ೃ࿔*:･°❀⋆.ೃ°❀⋆.ೃ࿔*:･°❀⋆.ೃCODE CSS ❀⋆.ೃ࿔*:･°❀⋆.ೃ࿔*:･°❀⋆.ೃ࿔*:･°❀⋆.ೃ࿔*:･°❀⋆.ೃ࿔*:･°❀⋆.ೃ࿔*:･°❀⋆.ೃ࿔*:･°❀⋆.ೃ࿔*:･°❀⋆.ೃ࿔**/
+
+
+
+/* Intégration de la police du titre " SHIRO STOPWATCH " °❀⋆.ೃ࿔*:･°❀⋆.ೃ࿔*:･°❀⋆.ೃ࿔*:･°❀⋆.ೃ࿔*:･°❀⋆.ೃ࿔*:･°❀⋆.ೃ࿔*:･°❀⋆*/
+
+ @font-face {
+    font-family: "Technology";
+    src: url(../Assets/Fonts/Technology-Bold.woff.ttf)
+  } 
+
+
+ /* Style général du chronomètre °❀⋆.ೃ࿔*:･°❀⋆.ೃ࿔*:･°❀⋆.ೃ࿔*:･°❀⋆.ೃ࿔*:･°❀⋆.ೃ࿔*:･°❀⋆.ೃ࿔*:･°❀⋆.ೃ࿔*:･°❀⋆.ೃ࿔*:･°❀⋆.ೃ࿔*:･*/
+ 
+body 
+{
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background-image: url(../Assets/Images/9.jpg);
+    background-size: 105% 105% ;
+    animation: Bg-image 5s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+  }
+
+  /* Animation du background-image°❀⋆.ೃ࿔*:･°❀⋆.ೃ࿔*:･°❀⋆.ೃ࿔*:･°❀⋆.ೃ࿔*:･°❀⋆.ೃ࿔*:･°❀⋆.ೃ࿔*:･°❀⋆.ೃ࿔*:･°❀⋆.ೃ࿔*:･°❀⋆.ೃ࿔*:･*/
+
+  @keyframes Bg-image
+  {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 50% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  /* Styliser le titre du chronomètre°❀⋆.ೃ࿔*:･°❀⋆.ೃ࿔*:･°❀⋆.ೃ࿔*:･°❀⋆.ೃ࿔*:･°❀⋆.ೃ࿔*:･°❀⋆.ೃ࿔*:･°❀⋆.ೃ࿔*:･°❀⋆.ೃ࿔*:･°❀⋆.ೃ࿔**/
+
+  h1
+  {
+    font-family: Technology;
+    font-size: 6rem;
+    color: rgb(107, 75, 45);
+    letter-spacing: 15px;
+  }  
+
+  
+  /* Stylisation du container °❀⋆.ೃ࿔*:･°❀⋆.ೃ࿔*:･°❀⋆.ೃ࿔*:･°❀⋆.ೃ࿔*:･°❀⋆.ೃ࿔*:･°❀⋆.ೃ࿔*:･°❀⋆.ೃ࿔*:･°❀⋆.ೃ࿔*:･°❀⋆.ೃ࿔*:･°❀⋆.ೃ*/
+
+  .container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.596);
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 8px 15px rgba(95, 90, 90, 0.651);
+  }
+  
+  /* Affichage du temps °❀⋆.ೃ࿔*:･°❀⋆.ೃ࿔*:･°❀⋆.ೃ࿔*:･°❀⋆.ೃ࿔*:･°❀⋆.ೃ࿔*:･°❀⋆.ೃ࿔*:･°❀⋆.ೃ࿔*:･°❀⋆.ೃ࿔*:･°❀⋆.ೃ࿔*:･°❀⋆.ೃ࿔*:･°❀⋆ */
+
+  .timer {
+    font-size: 5rem;
+    margin: 20px 0;
+    font-family: Arial;
+  }
+  
+  /* Style des boutons °❀⋆.ೃ࿔*:･°❀⋆.ೃ࿔*:･°❀⋆.ೃ࿔*:･°❀⋆.ೃ࿔*:･°❀⋆.ೃ࿔*:･°❀⋆.ೃ࿔*:･°❀⋆.ೃ࿔*:･°❀⋆.ೃ࿔*:･°❀⋆.ೃ࿔*:･°❀⋆.ೃ࿔*:･°❀⋆.*/
+
+  .buttons button {
+    background: #ffffff;
+    border: none;
+    color: rgb(162, 62, 62);
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.5s ease, box-shadow 0.2s ease;
+    font-weight: bold;
+    font-family: sans-serif;
+  }
+  
+  .buttons button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 3px 3px  rgba(255, 255, 255, 0.945);
+  }
+  
+  /* Liste des tours °❀⋆.ೃ࿔*:･°❀⋆.ೃ࿔*:･°❀⋆.ೃ࿔*:･°❀⋆.ೃ࿔*:･°❀⋆.ೃ࿔*:･°❀⋆.ೃ࿔*:･°❀⋆.ೃ࿔*:･°❀⋆.ೃ࿔*:･°❀⋆.ೃ࿔*:･°❀⋆.ೃ࿔*:･°❀⋆.ೃ࿔*:･*/
+  
+  #laps {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  #laps li {
+    background: rgba(228, 217, 217, 0.884);
+    margin: 5px 0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #ff0000;
+    font-weight: bold;
+  }
+  
